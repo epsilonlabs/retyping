@@ -1,0 +1,35 @@
+rule Person2Male 
+	transform s : In!t_person 
+	to t : Out!Male { 
+	
+	guard: s.a_gender = 'male' 
+	
+	t.name = s.a_name; 
+	t.pets ::= s.c_pet; 
+}
+
+rule Person2Female 
+	transform s : In!t_person 
+	to t : Out!Female { 
+	
+	guard: s.a_gender = 'female' 
+	
+	t.name = s.a_name; 
+	t.pets ::= s.c_pet; 
+}
+
+@leaks
+rule Pet2Pet 
+	transform s : In!t_pet 
+	to t : Out!Pet { 
+	
+	t.name = s.a_name; 
+}
+
+rule PetAndOwner 
+	transform s : P!PetAndOwner 
+	to t : Out!PetAndOwner { 
+	
+	t.ownerName = s.p.a_name; 
+	t.petName = s.pet.a_name;
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.epsilon.common.dt.modelType">
+      <modelType
+            class="org.eclipse.epsilon.emc.retyping.dt.RetypingModelInEclipse"
+            dialog="org.eclipse.epsilon.emc.retyping.dt.RetypingModelConfigurationDialog"
+            icon="images/retyping.png"
+            label="Retyping Model"
+            stable="true"
+            type="Retyping">
+      </modelType>
+   </extension>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="org.eclipse.epsilon.emc.retyping.dt.RetypingModelEditor"
+            default="true"
+            extensions="rtm"
+            icon="images/retyping.png"
+            id="org.eclipse.epsilon.emc.ert.dt.RetypingModelEditor"
+            name="Retyping Model Editor">
+      </editor>
+   </extension>
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <wizard
+            category="org.eclipse.epsilon.dt"
+            class="org.eclipse.epsilon.emc.retyping.dt.NewRetypingModelWizard"
+            icon="images/retyping.png"
+            id="org.eclipse.epsilon.emc.retyping.dt.NewRetypingModelWizard"
+            name="Retyping Model">
+         <description>
+            Create a new EOL program
+         </description>
+      </wizard>
+   </extension>
+</plugin>

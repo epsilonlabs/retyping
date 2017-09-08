@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Epsilon EMC Retyping
+Bundle-SymbolicName: org.eclipse.epsilon.emc.retyping
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.eclipse.epsilon.etl.engine,
+ org.eclipse.epsilon.emc.plainxml,
+ org.eclipse.epsilon.eol.engine,
+ com.google.guava_18.0,
+ org.eclipse.epsilon.epl.engine
+Export-Package: org.eclipse.epsilon.emc.retyping

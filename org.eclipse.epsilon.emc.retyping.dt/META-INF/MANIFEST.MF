@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: EMC Retyping Development Tools
+Bundle-SymbolicName: org.eclipse.epsilon.emc.retyping.dt;singleton:=true
+Bundle-Version: 1.5.0.qualifier
+Bundle-Activator: org.eclipse.epsilon.emc.retyping.dt.Activator
+Require-Bundle: org.eclipse.epsilon.emc.plainxml,
+ org.eclipse.epsilon.common.dt,
+ org.eclipse.epsilon.emc.retyping,
+ org.eclipse.epsilon.epl.engine,
+ org.eclipse.epsilon.etl.engine,
+ org.eclipse.ui.forms,
+ org.eclipse.ui.workbench,
+ org.eclipse.ui.ide
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Export-Package: org.eclipse.epsilon.emc.retyping.dt
+Bundle-Vendor: Eclipse Modeling Project

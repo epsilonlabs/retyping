@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<retyping>
+	<etl file="/org.eclipse.epsilon.emc.retyping.examples/retyping.etl"/>
+	<epl file="/org.eclipse.epsilon.emc.retyping.examples/patterns.epl"/>
+	
+
+
+<model properties="name=In&#10;readOnLoad=true&#10;storeOnDisposal=false&#10;aliases=&#10;uri=&#10;cached=true&#10;file=/org.eclipse.epsilon.emc.retyping.examples/pets.xml&#10;fileBased=true&#10;type=PlainXML"/>
+</retyping>

@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<model>
+	<person name="Tom" gender="male"><pet name="Jack"/></person>
+	<person name="Jayne" gender="female"><pet name="Claire"/></person>
+</model>

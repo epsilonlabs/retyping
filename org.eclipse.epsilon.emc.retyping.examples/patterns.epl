@@ -1,0 +1,7 @@
+pattern PetAndOwner 
+	p : t_person, 
+	pet : t_pet from : p.c_pet {
+	
+	match: true.println()
+	
+}
